@@ -3,7 +3,7 @@
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  home.username = "nixos";
+  home.username = "me";
   home.homeDirectory = "/home/nixos";
 
   home.file = {
