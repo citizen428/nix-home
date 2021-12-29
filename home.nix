@@ -7,12 +7,21 @@
   home.homeDirectory = "/home/nixos";
 
   home.file = {
+    "./.asdfrc".source = ./dotfiles/asdfrc;
     "./.config/nvim".source = ./nvim-config;
+    "./.default-gems".source = ./dotfiles/default-gems;
+    "./.gitattributes".source = ./dotfiles/gitattributes;
+    "./.gitconfig".source = ./dotfiles/gitconfig;
+    "./.gitignore".source = ./dotfiles/gitignore;
+    "./.pryrc".source = ./dotfiles/pryrc;
+    "./.psqlrc".source = ./dotfiles/psqlrc;
+    "./.tmux.conf".source = ./dotfiles/tmux.conf;
   };
 
   home.packages = [
     pkgs.asdf-vm
     pkgs.exa
+    pkgs.fzf
     pkgs.fishPlugins.foreign-env
     pkgs.fnm
     pkgs.htop
