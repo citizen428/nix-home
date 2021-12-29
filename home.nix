@@ -20,6 +20,7 @@
 
   home.packages = [
     pkgs.asdf-vm
+    pkgs.bat
     pkgs.exa
     pkgs.fzf
     pkgs.fishPlugins.foreign-env
