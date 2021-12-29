@@ -6,6 +6,10 @@
   home.username = "nixos";
   home.homeDirectory = "/home/nixos";
 
+  home.file = {
+    "./.config/nvim".source = ./nvim-config;
+  };
+
   home.packages = [
     pkgs.asdf-vm
     pkgs.exa
